@@ -54,9 +54,9 @@ export default function Header() {
               </MenubarTrigger>
               <MenubarContent className="bg-green-500" align="end">
                 <MenubarItem asChild><Link href="/">Início</Link></MenubarItem>
-                <MenubarItem asChild><Link href="/projeto">O Projeto</Link></MenubarItem>
-                <MenubarItem asChild><Link href="/equipe">Equipe</Link></MenubarItem>
-                <MenubarItem asChild><Link href="/contato">Contato</Link></MenubarItem>
+                <MenubarItem asChild><Link href="/projects">Projetos</Link></MenubarItem>
+                <MenubarItem asChild><Link href="/aboutsection">Sobre</Link></MenubarItem>
+                <MenubarItem asChild><Link href="/blog">Blog</Link></MenubarItem>
               </MenubarContent>
             </MenubarMenu>
           </Menubar>
