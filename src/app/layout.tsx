@@ -11,8 +11,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Feira do 2º C",
-  description: "Site da Feira do 2º C",
+  title: "Mostra Científica do 2º C",
+  description: "Site da mostra científica do 2º C",
   icons: {
     icon: "/iconsiteup.ico",
   },
