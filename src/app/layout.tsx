@@ -14,9 +14,25 @@ export const metadata: Metadata = {
   title: "Feira do 2º C",
   description: "Site da Feira do 2º C",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/iconsiteup.ico",
+  },
+  openGraph: {
+    title: "Feira do 2º C",
+    description: "Confira os projetos da mostra científica!",
+    url: "https://mostracientifica2c.vercel.app/",
+    siteName: "Feira do 2º C",
+    images: [
+      {
+        url: "/imagesite.png",
+        width: 1200,
+        height: 630,
+        alt: "Banner da Feira do 2º C",
+      },
+    ],
+    type: "website",
   }
 };
+
 
 export default function RootLayout({
   children,
