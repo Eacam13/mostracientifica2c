@@ -24,9 +24,10 @@ export default function Projets() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {mockProjects.map(({ id, title, icon: Icon, image, summary, details, team }) => (
+
             <Card
               key={id}
-              className="overflow-hidden border border-green-200 hover:shadow-lg transition-all duration-300"
+              className="overflow-hidden border border-green-200 hover:shadow-lg transition-all duration-300 p-0"
             >
               <div className="relative w-full h-52">
                 <Image
@@ -36,34 +37,35 @@ export default function Projets() {
                   className="object-cover"
                 />
               </div>
-              <CardContent className="p-5">
-                <div className="flex items-center gap-3 mb-2">
-                  <Icon className="text-green-600 w-6 h-6" />
-                  <h2 className="text-xl font-semibold text-green-700">{title}</h2>
-                </div>
-                <p className="text-sm text-gray-700 mb-4">{summary}</p>
-
-                <Button
-                  variant="outline"
-                  className="text-green-700 border-green-500 hover:bg-green-100"
-                  onClick={() => toggleCard(id)}
-                >
-                  {openCardId === id ? 'Menos informações' : 'Mais informações'}
-                  <ChevronDown
-                    className={clsx('ml-2 transition-transform', {
-                      'rotate-180': openCardId === id
-                    })}
-                  />
-                </Button>
-
-                {openCardId === id && (
-                  <div className="mt-4 text-sm text-gray-800 bg-green-50 p-4 rounded-md">
-                    <p className="mb-2">{details}</p>
-                    <p className="text-green-700 font-medium">Equipe responsável: {team}</p>
+                <CardContent className="p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Icon className="text-green-600 w-6 h-6" />
+                    <h2 className="text-xl font-semibold text-green-700">{title}</h2>
                   </div>
-                )}
-              </CardContent>
+                  <p className="text-sm text-gray-700 mb-4">{summary}</p>
+
+                  <Button
+                    variant="outline"
+                    className="text-green-700 border-green-500 hover:bg-green-100"
+                    onClick={() => toggleCard(id)}
+                  >
+                    {openCardId === id ? 'Menos informações' : 'Mais informações'}
+                    <ChevronDown
+                      className={clsx('ml-2 transition-transform', {
+                        'rotate-180': openCardId === id
+                      })}
+                    />
+                  </Button>
+
+                  {openCardId === id && (
+                    <div className="mt-4 text-sm text-gray-800 bg-green-50 p-4 rounded-md">
+                      <p className="mb-2 text-justify">{details}</p>
+                      <p className="text-green-700 font-medium">Equipe responsável: {team}</p>
+                    </div>
+                  )}
+                </CardContent>
             </Card>
+
           ))}
         </div>
       </div>

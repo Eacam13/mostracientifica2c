@@ -21,13 +21,13 @@ export default function Footer() {
               <Link href="/" className="hover:underline">Início</Link>
             </li>
             <li>
-              <Link href="/projeto" className="hover:underline">Projetos</Link>
+              <Link href="/projects" className="hover:underline">Projetos</Link>
             </li>
             <li>
-              <Link href="/equipe" className="hover:underline">Equipe</Link>
+              <Link href="/aboutsection" className="hover:underline">Sobre</Link>
             </li>
             <li>
-              <Link href="/contato" className="hover:underline">Contato</Link>
+              <Link href="/blog" className="hover:underline">Blog</Link>
             </li>
           </ul>
         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              Av. das Ciências, 123 – Centro, Cidade/UF
+              RUA SAO RAIMUNDO, 199 PIRAMBU - CEARÁ
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
@@ -45,14 +45,7 @@ export default function Footer() {
                 segundocdhc@gmail.com
               </a>
             </li>
-            <li className="flex gap-4 mt-2">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                <Facebook className="h-5 w-5" />
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>

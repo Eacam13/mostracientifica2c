@@ -1,7 +1,7 @@
 /* File: components/AboutSection.tsx */
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Calendar, Users, Leaf, Star, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -11,9 +11,9 @@ export default function AboutSection() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6">Sobre o Evento</h2>
             <p className="text-gray-600 mb-6 text-justify">
-              A Feira de Sustentabilidade é um evento anual que reúne estudantes, professores,
-              pesquisadores e profissionais interessados em compartilhar conhecimentos e soluções
-              para um futuro mais sustentável. Com palestras, workshops, exposições e muito mais,
+              A Mostra Científica é um evento anual que reúne estudantes, professores
+              e outros profissionais interessados em compartilhar conhecimentos e soluções
+              para um futuro mais sustentável. Com exposições e muito mais,
               o evento é uma oportunidade única para aprender e se conectar.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-6">
@@ -23,21 +23,23 @@ export default function AboutSection() {
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-green-600" />
-                <span>+2000 participantes</span>
+                <span>+100 participantes</span>
               </div>
               <div className="flex items-center gap-2">
                 <Leaf className="h-5 w-5 text-green-600" />
-                <span>50+ projetos</span>
+                <span>+20 projetos</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5 text-green-600" />
-                <span>10 categorias</span>
+                <span>7 categorias</span>
               </div>
             </div>
-            <Button className="bg-green-600 hover:bg-green-700">
-              Saber mais
-              <ArrowUpRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/blog" >
+              <Button className="bg-green-600 hover:bg-green-700 cursor-pointer">
+                Deixe sua mensagem
+                <ArrowUpRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-full h-96">

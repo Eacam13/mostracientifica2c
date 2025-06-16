@@ -23,15 +23,15 @@ export default function AboutSection() {
               </div>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-green-600" />
-                <span>+2000 participantes</span>
+                <span>+100 participantes</span>
               </div>
               <div className="flex items-center gap-2">
                 <Leaf className="h-5 w-5 text-green-600" />
-                <span>50+ projetos</span>
+                <span>+20 projetos</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="h-5 w-5 text-green-600" />
-                <span>10 categorias</span>
+                <span>7 categorias</span>
               </div>
             </div>
             <Button className="bg-green-600 hover:bg-green-700">

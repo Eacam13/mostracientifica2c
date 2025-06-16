@@ -1,4 +1,4 @@
-// src/components/TestimonialsSection.tsx
+
 
 export default function TestimonialsSection() {
   return (
@@ -8,16 +8,16 @@ export default function TestimonialsSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              name: "João Pedro",
-              text: "A feira foi sensacional! Aprendi muito e adorei a dinâmica entre as equipes.",
+              name: "Otávio",
+              text: "A feira é sensacional! Aprendo muito e adoro a dinâmica entre as equipes.",
             },
             {
-              name: "Maria Clara",
-              text: "Foi uma experiência única! Nunca pensei que história pudesse ser tão divertida.",
+              name: "Francisco Kauan",
+              text: "É uma experiência única e espero aproveitar bastante.",
             },
             {
-              name: "Lucas Andrade",
-              text: "Participar e ainda ganhar um prêmio foi incrível. Já quero a próxima!",
+              name: "Vitória Suani",
+              text: "Vou adorar prestigiar meus colegas.",
             },
           ].map((depoimento, i) => (
             <div key={i} className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">

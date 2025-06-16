@@ -1,5 +1,5 @@
 // src/components/FeaturesSection.tsx
-import { Lightbulb, Mic, Music } from "lucide-react";
+import { Lightbulb, Share2, FlaskConical } from "lucide-react";
 
 export default function FeaturesSection() {
   return (
@@ -12,21 +12,27 @@ export default function FeaturesSection() {
               <Lightbulb className="w-8 h-8 text-blue-600 dark:text-blue-300" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Aprendizado</h3>
-            <p className="text-gray-600 dark:text-gray-300">Descubra e compartilhe conhecimentos sobre os anos 20.</p>
+            <p className="text-gray-600 dark:text-gray-300">
+              Aprofunde seus conhecimentos sobre sustentabilidade, ciência e os desafios do futuro.
+            </p>
           </div>
           <div className="text-center">
             <div className="mx-auto mb-4 p-4 bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center">
-              <Mic className="w-8 h-8 text-green-600 dark:text-green-300" />
+              <Share2 className="w-8 h-8 text-green-600 dark:text-green-300" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Debates</h3>
-            <p className="text-gray-600 dark:text-gray-300">Participe de rodas de conversa e apresentações dinâmicas.</p>
+            <h3 className="text-xl font-semibold mb-2">Compartilhamento</h3>
+            <p className="text-gray-600 dark:text-gray-300">
+              Divida ideias, projetos e soluções com colegas, professores e visitantes da mostra.
+            </p>
           </div>
           <div className="text-center">
             <div className="mx-auto mb-4 p-4 bg-purple-100 dark:bg-purple-900 rounded-full w-16 h-16 flex items-center justify-center">
-              <Music className="w-8 h-8 text-purple-600 dark:text-purple-300" />
+              <FlaskConical className="w-8 h-8 text-purple-600 dark:text-purple-300" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Cultura</h3>
-            <p className="text-gray-600 dark:text-gray-300">Vivencie a arte, música e costumes que marcaram a década de 20.</p>
+            <h3 className="text-xl font-semibold mb-2">Experimentos</h3>
+            <p className="text-gray-600 dark:text-gray-300">
+              Apresente experiências práticas e criativas que promovem soluções sustentáveis.
+            </p>
           </div>
         </div>
       </div>

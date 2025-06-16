@@ -1,9 +1,10 @@
 /* File: components/HeroSection.tsx */
 'use client';
-import { useEffect, useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -17,7 +18,7 @@ export default function HeroSection() {
       </div>
       <div className="relative z-10 container mx-auto px-4 text-center">
         <Badge className="mb-4 bg-green-600 hover:bg-green-700">
-          15-20 de Junho, 2025
+          16-18 de Junho, 2025
         </Badge>
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Mostra Científica 2025
@@ -26,17 +27,23 @@ export default function HeroSection() {
           Conectando pessoas, ideias e soluções para um futuro mais sustentável e consciente.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-green-600 hover:bg-green-700">
-            Participar agora
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-white text-black hover:bg-white hover:text-black"
-          >
-            Conhecer mais
-          </Button>
+          <Link href="/blog">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 cursor-pointer">
+              Participar agora
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+          
+          <Link href="/projects">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-black hover:bg-white hover:text-black cursor-pointer"
+            >
+              Conhecer mais
+            </Button>
+          </Link>
+
         </div>
       </div>
       <div className="absolute bottom-8 left-0 right-0 flex justify-center">
