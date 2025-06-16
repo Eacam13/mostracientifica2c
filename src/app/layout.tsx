@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     icon: "/iconsiteup.ico",
   },
   openGraph: {
-    title: "Feira do 2º C",
+    title: "Mostra Científica do 2º C",
     description: "Confira os projetos da mostra científica!",
     url: "https://mostracientifica2c.vercel.app/",
     siteName: "Feira do 2º C",
