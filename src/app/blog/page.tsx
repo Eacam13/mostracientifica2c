@@ -81,7 +81,7 @@ export default function Blog() {
     <main className="min-h-screen bg-gradient-to-b from-white to-green-50 py-10 px-4 md:px-10">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-green-700 text-center mb-8 mt-[5%]">
-          💬 Mural de Recados
+          💬 Deixe sua mensagem 
         </h1>
 
         <form
